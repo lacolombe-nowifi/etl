@@ -7,6 +7,7 @@ original scraping code collected between 01/31/19 and 03/22/19.
 import os
 import re
 import pandas as pd
+import fastparquet
 
 # Read in log file
 with open("./Raw_Data/nohup.out") as f:
@@ -59,3 +60,4 @@ for fn in fnames:
             print(fn)
             pass
 df_all = pd.concat(lst_all) # Combine into one DataFrame
+df_all.to_parquet("./Raw_Data/divvy_2019jan2mar.gzip", compression="gzip") # Compress and save
