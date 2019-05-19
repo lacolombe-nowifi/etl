@@ -60,4 +60,4 @@ for fn in fnames:
             print(fn)
             pass
 df_all = pd.concat(lst_all) # Combine into one DataFrame
-df_all.to_parquet("./Raw_Data/divvy_2019jan2mar.gzip", compression="gzip") # Compress and save
+df_all.to_parquet("./Processed_Data/divvy_2019jan2mar.gzip", compression="gzip") # Compress and save
