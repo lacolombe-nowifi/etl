@@ -1,5 +1,5 @@
 '''
-This script scrapes Divvy RSS feed data in every 30 seconds and saves station status updates into CSV files.
+This script scrapes Divvy RSS feed data in every 30 seconds and saves station status updates into gzip files.
 '''
 
 # Load packages
